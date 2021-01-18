@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Spotify Playlist Creator</title>
+  </head>
+  <body>
+    {% block content %}
+
+    <h1> Spotify Playlist Generator </h1>
+    <p> Type in all of the artists you wish to add to playlist. <strong>Make sure to seperate each artist with a comma.<strong> </p>
+        <form action = "/playlistgenerator" method = "post">
+        Artist: <input type = "text" name = "artists"> <br />
+        Playlist Name: <input type = "text" name = "playlist_name" />
+        <input type = "submit" value = "Submit" />
+        </form>
+    {% endblock %}
+  </body>
+</html>
